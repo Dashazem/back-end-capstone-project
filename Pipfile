@@ -12,7 +12,6 @@ flask-cors = "*"
 bcrypt = "*"
 requests = "*"
 python-dotenv = "*"
-mysql-connector-python = "*"
 
 [dev-packages]
 
