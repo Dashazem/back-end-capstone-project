@@ -74,7 +74,7 @@ def upload_image():
     if not products_id:
         return jsonify({"message": "Product ID is required"}), 400
 
-    CLIENT_ID = '3f7e2edaa33b9c8'
+    CLIENT_ID = '701fb4cb760a51f'
     
     for image_product in images:
         if image_product:
@@ -248,7 +248,7 @@ def update_product(product_id):
             if image_file.mimetype in ['image/jpeg', 'image/png']:
                 image_data = image_file.read()
 
-                CLIENT_ID = '3f7e2edaa33b9c8'
+                CLIENT_ID = '701fb4cb760a51f'
                 headers = {'Authorization': f'Client-ID {CLIENT_ID}'}
                 response = requests.post("https://api.imgur.com/3/image", headers=headers, files={'image': image_data})
 
